@@ -1,0 +1,267 @@
+body {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+}
+
+/* For navigation */
+
+.logo {
+  width: 2em;
+  margin: 2.5em 6em;
+}
+
+.navigation {
+  margin-top: 1em;
+}
+
+.navigation li {
+  display: inline-block;
+  margin: 1em;
+}
+
+/* For hero */
+.main {
+  display: flex;
+  background-color: #495e57;
+  width: 100%;
+  height: 400px;
+}
+
+.main-content {
+  margin: 2em 5em 0em 7em;
+}
+
+.featured {
+  width: 100%;
+  height: 200px;
+}
+
+.featured img {
+  height: 325px;
+  border-radius: 5px;
+  margin: 2em 0em 0em 6em;
+}
+
+#button {
+  background-color: #f4ce14;
+  color: black;
+  font-family: "Karla", sans-serif;
+  font-size: 18px;
+  width: 200px;
+  height: 60px;
+  border-radius: 8px;
+  border: none;
+  margin: 2.5em 0em 0em 0em;
+}
+
+#button:hover {
+  cursor: pointer;
+}
+
+/* For specials cards */
+.specials {
+  height: 600px;
+}
+
+.specials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0em 5em 0em 5em;
+}
+
+.cards-section {
+  display: flex;
+  justify-content: center;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.card-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  margin: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 450px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background-color: #EDEFEE;
+  width: 100%;
+}
+
+.card img {
+  width: 270px;
+  height: 160px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+@media (min-width: 600px) {
+  .card {
+    width: 270px;
+  }
+}
+
+.card h2 {
+  color: black;
+}
+
+.card h2, p {
+  text-align: left;
+  padding-left: 0.5em;
+}
+
+/* For testimonials */
+.testimonials {
+  background-color: #495e57;
+  width: 100%;
+  height: 800px;
+}
+
+.testimonials-header {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonials-cards-section {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: row;
+  justify-content: center;
+  margin: 0em 7em 0em 7em;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  font-family: "Karla", sans-serif;
+  background-color: #EDEFEE;
+  margin: 5em 1.3em 2em 1.3em;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  height: 250px;
+  max-width: 405px;
+}
+
+.testimonial-card-image {
+  display: block;
+  margin: -4em auto 0 auto;
+  width: 34%;
+  height: 55%;
+  border-radius: 50%;
+  box-shadow: 0px 2px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-name {
+  color: black;
+  text-align: center;
+
+}
+
+.testimonial-feedback {
+  margin: 1em 1em 0em 1em;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .testimonial-card {
+    width: 405px;
+  }
+}
+
+.star-rating {
+  color: #f39c12;
+  font-size: 28px;
+  margin-top: -20px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.star-filled {
+  color: #f39c12;
+  text-align: center;
+}
+
+.star-empty {
+  color: #ccc;
+  text-align: center;
+}
+
+/* About Little Lemon */
+.about {
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
+
+.about-content {
+  margin: 0em 6em 0em 4em;
+}
+
+.chefs {
+  display: flex;
+  flex-direction: column;
+  margin: 3em 3em 0em 0em;
+}
+
+.chefs img {
+  width: 350px;
+}
+
+#chefs-item-1 {
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+#chefs-item-2 {
+  margin: -1.5em auto auto -2em;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+
+/* For Footer */
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  /* background-color: #495e57; */
+  border-top: 10px groove #495e57;
+  margin-top: 20px;
+}
+
+.footer img {
+  width: 70%;
+  margin-top: 10px;
+}
+
+.footer-links li, .footer-contacts li, .footer-socials li {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fonts */
+h1 {
+  font-family: "Markazi Text", serif;
+  color: #f4ce14;
+}
+
+h2 {
+  font-family: "Markazi Text", serif;
+  color: #EDEFEE;
+}
+
+a {
+  text-decoration: none;
+}
