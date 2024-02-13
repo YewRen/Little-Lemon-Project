@@ -4,17 +4,19 @@ body {
 
 .header {
   display: flex;
+  justify-content: center;
 }
 
 /* For navigation */
 
 .logo {
-  width: 2em;
-  margin: 2.5em 6em;
+  width: 22em;
+  margin-top: 2.5em;
+  padding-left: 2em;
 }
 
 .navigation {
-  margin-top: 1em;
+  margin: 1em 0em 0em 0em;
 }
 
 .navigation li {
@@ -28,21 +30,24 @@ body {
   background-color: #495e57;
   width: 100%;
   height: 400px;
+  justify-content: center;
 }
 
 .main-content {
-  margin: 2em 5em 0em 7em;
+  display: block;
+  width: 600px;
+  padding: 2em 2em 2em 2em;
 }
 
 .featured {
-  width: 100%;
-  height: 200px;
+  width: 300px;
 }
 
 .featured img {
+  display: block;
   height: 325px;
   border-radius: 5px;
-  margin: 2em 0em 0em 6em;
+  margin: 2em auto 0em auto;
 }
 
 #button {
@@ -54,7 +59,7 @@ body {
   height: 60px;
   border-radius: 8px;
   border: none;
-  margin: 2.5em 0em 0em 0em;
+  margin: 0em 0em 0em 0em;
 }
 
 #button:hover {
@@ -63,7 +68,10 @@ body {
 
 /* For specials cards */
 .specials {
+  display: grid;
   height: 600px;
+  width: 100%;
+  justify-content: center;
 }
 
 .specials-header {
@@ -71,6 +79,8 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0em 5em 0em 5em;
+  width: 870px;
+  text-align: center;
 }
 
 .cards-section {
@@ -136,11 +146,11 @@ body {
 
 .testimonials-cards-section {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-flow: row;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
-  margin: 0em 7em 0em 7em;
+  margin: auto;
+  width: 1000px;
 }
 
 .testimonial-card {
@@ -203,18 +213,21 @@ body {
 /* About Little Lemon */
 .about {
   display: flex;
-  width: 100%;
+  width: 1000px;
   height: 500px;
+  margin: auto;
 }
 
 .about-content {
-  margin: 0em 6em 0em 4em;
+  width: 60%;
+  padding: 3em 7em 0em 2em;
 }
 
 .chefs {
   display: flex;
   flex-direction: column;
-  margin: 3em 3em 0em 0em;
+  margin-top: 3em;
+  width: 40%;
 }
 
 .chefs img {
@@ -231,19 +244,62 @@ body {
   z-index: -1;
 }
 
+/* For reservation */
+.booking-wrapper, .booking-confirmation {
+  margin: auto;
+  width: 600px;
+}
+
+.booking-details {
+  display: grid;
+  grid-template-areas: "firstrow firstrow" 
+  "secondrow secondrow" 
+  "thirdrow thirdrow";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.booking-date, .booking-time, .booking-guests, .booking-occasion, 
+.booking-request, .booking-submit, .booking-firstname, .booking-lastname, 
+.booking-contactnumber, .booking-email
+{
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+}
+
+.booking-request {
+  grid-area: thirdrow;
+}
+
+.personal-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.booking-submit {
+  margin-top: 1.5em;
+}
+
 /* For Footer */
 .footer {
-  display: flex;
-  justify-content: space-evenly;
   width: 100%;
-  /* background-color: #495e57; */
-  border-top: 10px groove #495e57;
-  margin-top: 20px;
+  background-color: #495e57;
+}
+
+.footer-content {
+  display: flex;
+  width: 1000px;
+  height: 200px;
+  justify-content: space-around;
+  margin: auto;
 }
 
 .footer img {
-  width: 70%;
-  margin-top: 10px;
+  display: block;
+  height: 150px;
+  margin-top: 1.5em;
 }
 
 .footer-links li, .footer-contacts li, .footer-socials li {

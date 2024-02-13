@@ -8,8 +8,7 @@ const StarRating = ({rating}) => {
                 <span key={i} className={i <= rating ? 'star-filled' : 'star-empty'}>
                     ★
                 </span>
-            );
-            
+            );        
         }
         return stars;
     };

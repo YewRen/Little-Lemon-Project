@@ -1,14 +1,20 @@
-import React from "react";
 import Header from "./Header";
-import  Footer from "./Footer";
+import Footer from "./Footer";
 import BookingForm from "./BookingForm";
 
-const BookingPage = () => {
+const BookingPage = ({ formData, setFormData, availableTimes, updateTimes, submitForm }) => {
+
     return (
         <>
             <Header />
-            <BookingForm />
-            <Footer />
+            <BookingForm
+                availableTimes={availableTimes}
+                updateTimes={updateTimes}
+                formData={formData}
+                setFormData={setFormData}
+                submitForm={submitForm}
+            />
+            <Footer />   
         </>
     )
 }
